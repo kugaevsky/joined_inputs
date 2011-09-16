@@ -1,25 +1,27 @@
 Joined Inputs
 =================
 
-Simple coffee script to make several inputs act like one.
-For example for card or phone number input in your form.
+Simple jQuery plugin to make several inputs act like one.
+For example for card or phone number fields in your form.
 
-1. Caret moves to next input if maximum length of current is reached (autotab).
-2. Caret jumps to next or previous input on arrow keys.
-3. Delete chars with backspace works through all joined fields.
+1. Caret moves to next input if maximum length (taken from `maxlength` attribute) of current is reached (autotab).
+2. Caret jumps to next or previous input on `right/left arrow keys` if caret at the end/beginning of current field.
+3. Delete chars with `Backspace` works through all joined fields.
+4. `Home` makes caret jump to first position in first input, `End` — to last position in last input.
+5. Correctly works with `Tab` and `Shift+Tab`
+
 
 Requirements
 ----------------
 
-Script needs some jQuery functions. So require this library before using.
-And of course you need [coffescript](http://jashkenas.github.com/coffee-script/) compiler to make js-file.
+It's jQuery plugin so it require jQuery library for using.
+
 
 Usage
 ---------------
 
 1. Include javascript file in header of your page
-2. Wrap inputs you want to act like one in html element
-3. Use function with this element selector
+2. Use function with jQuery selector
 
 Something like this
 
@@ -34,7 +36,14 @@ Something like this
 
 *JS*
 
-    joinInputs('#some-inputs')
+    $('#some-inputs input').joinInputs()
+
+
+Contribution
+-------------
+
+Feel free to request your changes to be pulled in.
+But only in [coffescript](http://jashkenas.github.com/coffee-script/).
 
 
 That's all folks
