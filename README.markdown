@@ -39,6 +39,11 @@ Something like this
     $('#some-inputs input').joinInputs()
 
 
+Demo
+-------------
+
+Here is a [small demo](http://kugaevsky.github.com/joined_inputs/)
+
 Contribution
 -------------
 
