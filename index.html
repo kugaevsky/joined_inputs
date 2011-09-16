@@ -1,0 +1,19 @@
+<html>
+	<head>
+		<title>Joined inputs :: jQuery plugin</title>
+		<script src="http://yandex.st/jquery/1.6.4/jquery.min.js" type="text/javascript"></script>
+		<script src="https://raw.github.com/kugaevsky/joined_inputs/master/join_inputs.jquery.min.js" type="text/javascript"></script>
+	<head>
+	<body>
+		<div id='some-inputs'>
+			<input type="text" maxlength="3" placeholder="3 chars"/>
+			<input type="text" maxlength="5" placeholder="5 chars" />
+			<input type="text" maxlength="2" placeholder="2 chars" />
+			<input type="text" maxlength="8" placeholder="8 chars" />
+		</div>
+		<p>Try using arrow keys, home and end buttons, tabulating from one field to another.</p>
+		<script type="text/javascript">
+			$('#some-inputs input').joinInputs()
+		</script>
+	</body>
+</html>
