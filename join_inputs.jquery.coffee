@@ -32,8 +32,7 @@
 							else
 								if (firedInput.value.length == firedInput.maxLength and
 								firedInput.selectionEnd == firedInput.value.length and
-								charCode != 16 and
-								charCode != 9
+								not (charCode in [9, 16, 38, 40])
 								)
 									setInput(currentInputIndex + 1)
 					when 'before'
