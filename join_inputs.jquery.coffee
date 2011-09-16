@@ -23,10 +23,10 @@
 						switch charCode
 							# left
 							when 37
-								setInput(currentInputIndex-1) if currentInputIndex > 0 and currentInput.selectionStart == 0
+								setInput(currentInputIndex - 1) if currentInputIndex > 0 and currentInput.selectionStart == 0
 							# right
 							when 39
-								setInput(currentInputIndex+1) if currentInputIndex < (groupedInputs.length - 1) and currentInput.selectionEnd == currentInput.value.length
+								setInput(currentInputIndex + 1) if currentInputIndex < (groupedInputs.length - 1) and currentInput.selectionEnd == currentInput.value.length
 
 							# other key
 							else
@@ -35,12 +35,12 @@
 								charCode != 16 and
 								charCode != 9
 								)
-									setInput(currentInputIndex+1)
+									setInput(currentInputIndex + 1)
 					when 'before'
 						switch charCode
 							# backspace
 							when 8
-								setInput(currentInputIndex) if currentInputIndex > 0 and currentInput.selectionStart == 0
+								setInput(currentInputIndex - 1) if currentInputIndex > 0 and currentInput.selectionStart == 0
 							# home
 							when 36
 								setInput(0)
