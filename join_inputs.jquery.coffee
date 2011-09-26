@@ -39,7 +39,9 @@
 						switch charCode
 							# backspace
 							when 8
-								setInput(currentInputIndex - 1) if currentInputIndex > 0 and currentInput.selectionStart == 0
+								if currentInputIndex > 0 and currentInput.selectionStart == 0
+									setInput(currentInputIndex - 1)
+									currentInput.selectionStart = currentInput.value.length
 							# home
 							when 36
 								setInput(0)
