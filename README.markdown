@@ -51,4 +51,8 @@ Feel free to request your changes to be pulled in.
 But only in [coffescript](http://jashkenas.github.com/coffee-script/).
 
 
-That's all folks
+License
+------------
+
+Distributed under [ MIT license ]( https://github.com/kugaevsky/joined_inputs/wiki/Mit-license )
+Copyright (c) 2011 Nick Kugaevsky
