@@ -31,8 +31,7 @@
 							# other key
 							else
 								if (firedInput.value.length == firedInput.maxLength and
-								firedInput.selectionEnd == firedInput.value.length and
-								not (charCode in [9, 16, 38, 40])
+								firedInput.selectionEnd == firedInput.value.length and currentInputIndex < (groupedInputs.length - 1) and not (charCode in [9, 16, 38, 40])
 								)
 									setInput(currentInputIndex + 1)
 					when 'before'
