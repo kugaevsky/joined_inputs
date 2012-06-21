@@ -48,7 +48,7 @@
 							when 35
 								setInput(groupedInputs.length - 1)
 							else
-								if (currentInput.selectionEnd == currentInput.maxLength and not (charCode in [9, 16, 38, 40, 37, 39, 8, 36, 35]))
+								if (currentInput.value == currentInput.maxLength and not (charCode in [9, 16, 38, 40, 37, 39, 8, 36, 35]))
 									e.stopPropagation()
 									e.preventDefault()
 )(jQuery)
